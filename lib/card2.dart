@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'ui/products/product_detail_screen.dart';
 import 'ui/products/products_manager.dart';
@@ -9,17 +11,19 @@ import 'ui/screens.dart';
 
 import 'theme.dart';
 import 'author_card.dart';
+import 'ui/shared/app_drawer.dart';
 
 class Card2 extends StatelessWidget {
   const Card2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: FooderlichTheme.light(),
-      home: const SafeArea(
-        child: OrdersScreen(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('GIỎ HÀNG'),
       ),
+      drawer: const AppDrawer(),
+      body: const SafeArea(child: CartScreen()),
     );
   }
 }

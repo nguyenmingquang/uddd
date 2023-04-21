@@ -6,6 +6,7 @@ import 'user_product_list_tile.dart';
 import '/ui/screens.dart';
 import 'products_manager.dart';
 import '../shared/app_drawer.dart';
+// ignore: unused_import
 import '../../models/products.dart';
 
 class UserProductsScreen extends StatelessWidget {
@@ -15,17 +16,18 @@ class UserProductsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final productsManager = ProductsManager();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your Products'),
+        title: const Text('Danh Sách Sản Phẩm'),
         actions: <Widget>[
           buildAddButton(context),
         ],
       ),
       drawer: const AppDrawer(),
       body: RefreshIndicator(
-        onRefresh: () async => print('refresh products'),
+        onRefresh: () async => print('Làm mới sản phẩm'),
         child: buildUserProductListView(),
       ),
     );

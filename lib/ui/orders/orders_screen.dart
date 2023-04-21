@@ -5,19 +5,15 @@ import 'order_item_card.dart';
 import '../shared/app_drawer.dart';
 
 class OrdersScreen extends StatelessWidget {
-  static const routeName = '/orders';
-
   const OrdersScreen({super.key});
+  static const routeName = '/OrdersScreen';
 
   @override
   Widget build(BuildContext context) {
-    print('building orders');
+    // ignore: unused_local_variable
     final ordersManager = OrdersManager();
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('QUẢN LÝ ĐƠN HÀNG'),
-      ),
-      drawer: const AppDrawer(),
+      appBar: AppBar(),
       body: Consumer<OrdersManager>(
         builder: (ctx, ordersManager, child) {
           return ListView.builder(

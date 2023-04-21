@@ -44,7 +44,7 @@ class _OrderItemCardState extends State<OrderItemCard> {
                     prod.title,
                     style: const TextStyle(
                       fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.normal,
                     ),
                   ),
                   Text(
@@ -64,10 +64,10 @@ class _OrderItemCardState extends State<OrderItemCard> {
 
   Widget buildOrderSummary() {
     return ListTile(
-      title: Text('\$${widget.order.amount}'),
       subtitle: Text(
         DateFormat('dd/MM/yyyy hh:mm').format(widget.order.dateTime),
       ),
+      title: Text('\$${widget.order.amount}'),
       trailing: IconButton(
         icon: Icon(_expanded ? Icons.expand_less : Icons.expand_more),
         onPressed: () {

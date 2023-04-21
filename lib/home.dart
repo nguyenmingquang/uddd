@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'card1.dart';
 import 'card2.dart';
 import 'card3.dart';
+import 'card4.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,16 +19,14 @@ class _HomeState extends State<Home> {
     const Card1(),
     const Card2(),
     const Card3(),
+    const Card4(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Pets Shop',
-          style: Theme.of(context).textTheme.headlineLarge,
-        ),
+        title: Text('PETS SHOP'),
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -44,6 +43,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             icon: Icon(Icons.newspaper_outlined),
             label: 'Bảng Tin',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_card_rounded),
+            label: 'Đơn Đặt Hàng',
           ),
         ],
         currentIndex: _selectedIndex,

@@ -13,9 +13,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final cart = context.watch<CartManager>();
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('GIỎ HÀNG'),
-      ),
+      appBar: AppBar(),
       body: Column(
         children: <Widget>[
           buildCartSummary(cart, context),
@@ -50,7 +48,7 @@ class CartScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             const Text(
-              'Total',
+              'Tổng đơn hàng:',
               style: TextStyle(fontSize: 20),
             ),
             const Spacer(),
@@ -76,7 +74,7 @@ class CartScreen extends StatelessWidget {
               style: TextButton.styleFrom(
                 textStyle: TextStyle(color: Theme.of(context).primaryColor),
               ),
-              child: const Text('ORDER NOW'),
+              child: const Text('Đặt hàng'),
             )
           ],
         ),

@@ -41,6 +41,41 @@ class ProductsManager with ChangeNotifier {
           'https://cdn.pixabay.com/photo/2021/05/29/07/06/shiba-6292660_1280.jpg',
       isFavorite: true,
     ),
+    Product(
+      id: 'p5',
+      title: 'Mèo Shivana',
+      description:
+          'LÀ loài mèo tượng trưng cho sắc đẹp và cá tính ở các nước Tây Âu.',
+      price: 395.25,
+      imageUrl:
+          'https://i.pinimg.com/564x/18/50/99/185099422f04c864dc4c32dce4db73dc.jpg',
+      isFavorite: true,
+    ),
+    Product(
+      id: 'p6',
+      title: 'Chó Tuyết',
+      description: 'Là giống đến từ vùng tuyết. ',
+      price: 395.25,
+      imageUrl:
+          'https://i.pinimg.com/564x/2a/72/ea/2a72eadff9e3511dbf832101b4660d5c.jpg',
+    ),
+    Product(
+      id: 'p7',
+      title: 'Chó Alaska',
+      description: 'Là giống được mọi người yêu thích.',
+      price: 395.25,
+      imageUrl:
+          'https://i.pinimg.com/564x/51/db/08/51db081fb8d5cd83f854b14ac843d691.jpg',
+      isFavorite: true,
+    ),
+    Product(
+      id: 'p8',
+      title: 'Mèo Anh Lông Ngắn',
+      description: 'Là giống đến từ xứ Anh Quốc. ',
+      price: 395.25,
+      imageUrl:
+          'https://i.pinimg.com/564x/b5/2f/25/b52f25fef1f2716ba3089f98876019e6.jpg',
+    ),
   ];
 
   int get itemCount {

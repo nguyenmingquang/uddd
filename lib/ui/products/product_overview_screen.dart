@@ -44,7 +44,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
               Icons.shopping_cart,
             ),
             onPressed: () {
-              var pushNamed = Navigator.of(ctx).pushNamed(CartScreen.routeName);
+              Navigator.of(ctx).pushNamed(CartScreen.routeName);
             },
           ),
         );
@@ -64,7 +64,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
         });
       },
       icon: const Icon(
-        Icons.more_vert,
+        Icons.app_registration_rounded,
       ),
       itemBuilder: (ctx) => [
         const PopupMenuItem(

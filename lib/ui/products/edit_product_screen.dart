@@ -98,11 +98,11 @@ class _EditProductScreenState extends State<EditProductScreen> {
     return showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('An Error Occurred!'),
+        title: const Text('Lỗi!'),
         content: Text(message),
         actions: <Widget>[
           TextButton(
-            child: const Text('Okay'),
+            child: const Text('Thành Công'),
             onPressed: () {
               Navigator.of(ctx).pop();
             },
@@ -116,7 +116,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Edit Product'),
+        title: const Text('Chỉnh Sửa Sản Phẩm'),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.save),

@@ -3,14 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../models/products.dart';
 
 class CartManager with ChangeNotifier {
-  Map<String, CartItem> _items = {
-    'p1': CartItem(
-      id: 'c1',
-      title: 'Red Shirt',
-      quantity: 2,
-      price: 29.99,
-    ),
-  };
+  Map<String, CartItem> _items = {};
 
   int get productCount {
     return _items.length;
